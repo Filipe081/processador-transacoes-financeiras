@@ -1,0 +1,52 @@
+{
+    "A": {
+        "id": "A",
+        "agencia": "123",
+        "numero": "123",
+        "saldo": 500.0,
+        "moeda_padrao": "BRL",
+        "historico": [
+            {
+                "tipo": "credito",
+                "valor": 1000.0,
+                "moeda": "BRL",
+                "data_hora": "2025-06-06T19:37:37.726278",
+                "descricao": ".",
+                "categoria": ""
+            },
+            {
+                "tipo": "debito",
+                "valor": 1000.0,
+                "moeda": "BRL",
+                "data_hora": "2025-06-06T19:37:48.096218",
+                "descricao": "",
+                "categoria": ""
+            },
+            {
+                "tipo": "debito",
+                "valor": 500.0,
+                "moeda": "BRL",
+                "data_hora": "2025-06-06T19:38:01.639169",
+                "descricao": "Transfer\u00eancia para B: ",
+                "categoria": null
+            }
+        ]
+    },
+    "B": {
+        "id": "B",
+        "agencia": "321",
+        "numero": "321",
+        "saldo": 500.0,
+        "moeda_padrao": "BRL",
+        "historico": [
+            {
+                "tipo": "credito",
+                "valor": 500.0,
+                "moeda": "BRL",
+                "data_hora": "2025-06-06T19:38:01.639169",
+                "descricao": "Transfer\u00eancia de A: ",
+                "categoria": null
+            }
+        ]
+    }
+}
