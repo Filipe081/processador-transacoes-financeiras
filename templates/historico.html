@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Histórico da Conta{% endblock %}
+
+{% block content %}
+    <h2>Histórico da Conta</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label>ID da Conta:</label>
+            <input type="text" name="id_conta" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+    </form>
+
+    {% if transacoes %}
+        <hr>
+        <ul class="list-group">
+            {% for t in transacoes %}
+                <li class="list-group-item">
+                    {{ t.data_hora }} - {{ t.tipo }} - {{ t.valor }} {{ t.moeda }} - {{ t.descricao }} [{{ t.categoria }}]
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

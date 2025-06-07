@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Abrir Conta{% endblock %}
+
+{% block content %}
+    <h2>Abrir Nova Conta</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label>ID da Conta:</label>
+            <input type="text" name="id_conta" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Agência:</label>
+            <input type="text" name="agencia" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Número da Conta:</label>
+            <input type="text" name="numero" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Moeda:</label>
+            <input type="text" name="moeda" class="form-control" value="BRL" required>
+        </div>
+        <div class="mb-3">
+            <label>Saldo Inicial:</label>
+            <input type="number" step="0.01" name="saldo" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Criar Conta</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+    </form>
+{% endblock %}

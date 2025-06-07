@@ -48,5 +48,13 @@
                 "categoria": null
             }
         ]
+    },
+    "111": {
+        "id": "111",
+        "agencia": "111",
+        "numero": "11",
+        "saldo": 11.0,
+        "moeda_padrao": "BRL",
+        "historico": []
     }
 }

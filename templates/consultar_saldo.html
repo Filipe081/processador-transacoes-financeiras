@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Consultar Saldo{% endblock %}
+
+{% block content %}
+    <h2>Consultar Saldo</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label>ID da Conta:</label>
+            <input type="text" name="id_conta" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Voltar</a>
+    </form>
+
+    {% if saldo is not none %}
+        <hr>
+        <p><strong>Saldo:</strong> {{ saldo }} {{ moeda }}</p>
+    {% endif %}
+{% endblock %}

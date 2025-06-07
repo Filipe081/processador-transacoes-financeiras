@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+    <ul class="list-group">
+        <li class="list-group-item"><a href="{{ url_for('abrir_conta') }}">Abrir nova conta</a></li>
+        <li class="list-group-item"><a href="{{ url_for('consultar_saldo') }}">Consultar saldo</a></li>
+        <li class="list-group-item"><a href="{{ url_for('historico') }}">Ver histórico da conta</a></li>
+    </ul>
+{% endblock %}
