@@ -13,4 +13,10 @@ Projeto desenvolvido para resolver a Questão 17 da seleção Unimed Caruaru.
 
 ## ▶️ Executando o projeto
 ```bash
+
+Terminal (modo CLI)
 python main.py
+
+Aplicação Web (com Flask)
+python app.py
+Acesse em: http://localhost:5000
